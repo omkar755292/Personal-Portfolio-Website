@@ -5,8 +5,8 @@ const ProjectCard = () => {
   return (
     <div className='project'>
         <div><img src={projectImg} alt="projectImg" /></div>
-        <div><p>Best Android App_Development Framework.</p></div>
-        <button>view</button>
+        <p>Best Android App_Develo Framework.</p>
+        <div><button>view</button></div>
     </div>
   )
 }

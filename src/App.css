@@ -18,8 +18,9 @@ p {
 
 /* Navigation Bar CSS is Written here  */
 .navbar {
-  padding-top: 4vw;
   display: flex;
+  margin-top: 4vw;
+  margin-bottom: 1vw;
 }
 
 .logo img {
@@ -35,8 +36,8 @@ p {
   padding: 0.5vw 1vw;
   margin: 1vw 0.5vw;
   font-size: 22px;
-  margin-top: 2vw;
 }
+
 .navlink a:hover {
   color: rgb(120, 15, 255);
 
@@ -83,14 +84,17 @@ p {
 
 .project {
   background-color: rgba(251, 251, 251, 0.453);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(100, 74, 160, 0.1);
   margin: 1vw;
-  padding: 20px;
+  width: 360px;
+  /* padding: 20px; */
 }
 
 .project img {
-  width: 300px;
+
+  width: 360px;
   height: 200px;
+
 }
 
 .project p {
@@ -98,11 +102,13 @@ p {
 }
 
 .project button {
-  font-size: 17px;
+  font-size: 15px;
   color: rgb(120, 15, 255);
   background-color: transparent;
-  padding: 1px 10vw;
   border: 1px solid rgb(120, 15, 255);
+  width: 100%;
+  padding: 5px;
+  margin: 6px;
 }
 
 /* CSS for Blog section  */
@@ -116,19 +122,29 @@ p {
 .blog-post {
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 10px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .blog-article {
-  margin-bottom: 2rem;
+  margin: 10px;
+  padding: 0px 5px;
   line-height: 1.6;
 }
 
 .blog-content {
   font-size: 16px;
+}
+
+.post-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(119, 15, 255, 0.7);
 }
 
 .blog-button {
@@ -158,13 +174,16 @@ p {
 }
 
 /* contact css is written here  */
+.contact-section {
+  margin-top: 4vw;
+}
 
-.contact-container {  
-  max-width: 600px;
+.contact-container {
+  max-width: 800px;
   margin: 20px auto;
   padding: 50px;
   background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(83, 40, 213, 0.1);
 }
 
 .contact-form {
@@ -180,30 +199,32 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.contact-form button{
+
+.contact-form button {
   width: 100%;
   background-color: rgb(120, 15, 255);
   color: white;
 }
-.contact-form button:hover{
-  background-color:white ;
+
+.contact-form button:hover {
+  background-color: white;
   color: rgb(120, 15, 255);
 }
 
 /* CSS for Footer section  */
 
-.footer-info {
+.startproject {
   display: flex;
   background-color: rgba(35, 6, 98, 0.942);
   color: white;
 }
 
-.footer-info p {
+.startproject p {
   padding-top: 0.8vw;
   font-size: 18px;
 }
 
-.footer-info button {
+.startproject button {
   margin-top: 1.5vw;
   background-color: transparent;
   color: white;
@@ -213,12 +234,14 @@ textarea {
   border-radius: 25px;
 }
 
-.footer-info div {
+.startproject div {
   padding: 0vw 3vw;
 }
-.footer-links{
+
+.footer-links {
   display: inline;
 }
+
 .footer-links a {
   margin: 0vw 0.5vw;
   color: rgb(120, 15, 255);

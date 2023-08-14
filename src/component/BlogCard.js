@@ -19,6 +19,7 @@ const BlogCard = () => {
                     non sint nobis debitis.
                 </p>
                 <button className='blog-button'>view</button>
+                <span className='post-date'>Posted on: August 15, 2023</span>
             </article>
         </div>
     )
