@@ -7,7 +7,7 @@ const StartProject = () => {
             <div><p>Interested in creating beautifull Website
                 I’m always open to discussing product design work , Just share your Idea with
                 me.</p></div>
-            <div><button>Let's do it</button></div>
+            <div><a href="/authentication/startproject"><button>Let's do it</button></a></div>
         </div>
     )
 }

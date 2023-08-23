@@ -6,20 +6,23 @@ import Events from './Events'
 import Contact from './Contact'
 import Error from './Error'
 import { BrowserRouter as Router , Route, Routes } from 'react-router-dom'
+import SignIn from './SignIn'
 
 const Main = () => {
   return (
     <>
-    <Router>
+    
       <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/about' element={<Events />} />
-      <Route path='/blog' element={<Blogs />} />
-      <Route path='/project' element={<Projects />} />
-      <Route path='/contact' element={<Contact />} />
-      <Route path='*' element={<Error />} />
+      <Route exact path='/' element={<Home />} />
+      <Route exact path='/about' element={<Events />} />
+      <Route exact path='/blog' element={<Blogs />} />
+      <Route exact path='/project' element={<Projects />} />
+      <Route exact path='/contact' element={<Contact />} />
+      <Route exact path='*' element={<Error />} />
       </Routes>
-    </Router>
+      <Routes>
+      </Routes>
+
     </>
   )
 }

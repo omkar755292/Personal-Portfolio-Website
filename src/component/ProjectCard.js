@@ -1,5 +1,5 @@
 import React from 'react'
-import projectImg from '../images/img-projects/Game_Development.png'
+import projectImg from '../asset/images/img-projects/web-design.jpg'
 
 const ProjectCard = () => {
   return (

@@ -1,10 +1,10 @@
 import React from 'react'
-import logo from "../images/logo.svg";
+import Logo from './Logo';
 
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <div className='logo'><img src={logo} alt="" srcset="" /></div>
+      <Logo />
       <div className='navlink'>
         <a href="/">Home</a>
         <a href="/about">About Me</a>
@@ -12,7 +12,7 @@ const Navbar = () => {
         <a href="/project">Projects</a>
         <a href="/contact">Contact Me</a>
       </div>
-      <div><button>Sing in</button></div>
+      <a href="/authentication"><button>Sing in</button></a>
     </div>
   )
 }

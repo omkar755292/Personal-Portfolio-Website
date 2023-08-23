@@ -1,8 +1,7 @@
 import React from 'react'
-import laptopimg from "../images/laptop.svg";
-import internship_acmc from '../images/img-intenship/acmcgrade.jpg'
-import internship_oasis from '../images/img-intenship/oasis.jpg'
-import internship_tatastu from '../images/img-intenship/tatastu.png'
+import laptopimg from '../asset/images/laptop.svg'
+import InternshipCard from '../component/InternshipCard'
+
 
 const Home = () => {
   return (
@@ -45,17 +44,7 @@ const Home = () => {
       <hr />
 
       {/* Internship Section  */}
-      <section className="internship-section">
-        <div className="internship-info">
-          <h1>I'm proud to have do Internship in some <br /> awesome companies:</h1>
-        </div>
-        <div className="internship-container">
-          <div className="internship"><img src={internship_acmc} alt="" /></div>
-          <div className="internship"><img src={internship_oasis} alt="" /></div>
-          <div className="internship"><img src={internship_tatastu} alt="" /></div>
-        </div>
-      </section>
-      <hr />
+      <InternshipCard />
       </main>
     </div>
   )

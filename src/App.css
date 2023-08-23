@@ -261,3 +261,17 @@ button:hover {
   background-color: rgb(120, 15, 255);
   color: white;
 }
+
+.button {
+  background-color: transparent;
+  color: rgb(120, 15, 255);
+  border: 2px solid rgb(120, 15, 255);
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: rgb(120, 15, 255);
+  color: white;
+}

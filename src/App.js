@@ -1,14 +1,19 @@
 import './App.css';
-import Footer from './component/Footer';
-import Header from './component/Header';
-import Main from './pages/Main';
+import Index from './pages/Index';
+import { BrowserRouter as Router , Route, Routes } from 'react-router-dom'
+import SignIn from './pages/SignIn';
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route exact path='/*' element={< Index />} />
+          <Route exact path='/authentication/*' element={< SignIn />} />
+        </Routes>
+      </Router>
+      
     </div>
   );
 }

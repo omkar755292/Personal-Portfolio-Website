@@ -1,4 +1,5 @@
 import React from 'react'
+import Avatar from '../component/Avatar'
 
 const Contact = () => {
   return (
@@ -6,6 +7,7 @@ const Contact = () => {
     <section className="contact-section">
         <div className="contact-container">
           <h2>Contact Me</h2>
+            <Avatar />
           <form className="contact-form">
             <input type="text" id="name" name="name" placeholder='Name' required />
 
