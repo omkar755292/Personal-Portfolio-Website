@@ -2,8 +2,8 @@ import React from 'react'
 import Avatar from '../component/Avatar'
 import Login from './Login'
 import Register from './Register'
-import { Route, Routes } from 'react-router-dom'
-import cancelIcon from '../asset/icons/xmark-solid (1).svg'
+import { Link, Route, Routes } from 'react-router-dom'
+import cancelIcon from '../asset/icons/xmark-solid.svg'
 import '../asset/css/signin.css'
 import ProjectQuery from './ProjectQuery'
 
@@ -12,7 +12,7 @@ const SignIn = () => {
 
     return (
         <div className='authentication'>
-            <a href="/"><img src={cancelIcon} alt= 'back' className='cancel-icon'/></a>
+            <Link to="/"><img src={cancelIcon} alt= 'back' className='cancel-icon'/></Link>
             <Avatar />
             <Routes>
                 <Route exact path='/' element={<Login />} />

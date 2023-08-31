@@ -1,7 +1,10 @@
 import React from 'react'
 import ProjectCard from '../component/ProjectCard'
 
-const Projects = () => {
+const Projects = (props) => {
+  const renderProject = props.projects.map((project) => {
+    return <ProjectCard key={project.id} project={project} />
+  });
   return (
     <div className='project-section'>
       <div className='project-info'>
@@ -9,12 +12,7 @@ const Projects = () => {
         <p>Here are a few past projects I've worked on. Want to see more? </p>
       </div>
       <div className='project-container'>
-        <ProjectCard /> 
-        <ProjectCard /> 
-        <ProjectCard /> 
-        <ProjectCard /> 
-        <ProjectCard /> 
-        <ProjectCard /> 
+        {renderProject}
       </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ProjectQuery = () => {
     return (
@@ -13,7 +14,7 @@ const ProjectQuery = () => {
                     <textarea type="text" placeholder='Project Short Description' />
                 </div>
                 <div>
-                    <a href="" className='button'>Submit</a>
+                    <Link to="/" className='button'>Submit</Link>
                 </div>
             </form>
         </div>

@@ -1,11 +1,11 @@
 import React from 'react'
 
-const BlogCard = () => {
+const BlogCard = (props) => {
     return (
         <div className='blog-post'>
-            <article className='blog-article'>
-                <h2>Blog Post Title</h2>
-                <p className='blog-content'>
+            <article className='blog-article' key={props.blog.id}>
+                <h2>{props.blog.title}</h2>
+                <p className='blog-content'>{props.blog.content}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                     vestibulum sagittis turpis at bibendum. Nunc nec bibendum quam.
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
@@ -19,7 +19,7 @@ const BlogCard = () => {
                     non sint nobis debitis.
                 </p>
                 <button className='blog-button'>view</button>
-                <span className='post-date'>Posted on: August 15, 2023</span>
+                <span className='post-date'>Posted on: August 15, 2023 by {props.blog.author}</span>
             </article>
         </div>
     )

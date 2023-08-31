@@ -1,19 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const verify = (e) => {
+        e.preventDefault();
+        const verifyUser = {email, password};
+        console.log(verifyUser);
+        setEmail('');
+        setPassword('');
+    }
     return (
         <div className='auth-form'>
-            <form>
+            <form onSubmit={verify}>
                 <div>
-                    {/* <label >Email address</label> */}
-                    <input type="email" placeholder='Enter your Name'/>
+                    <input 
+                    type="email" 
+                    value={email}
+                    onChange={(e)=>{setEmail(e.target.value)}}
+                    placeholder='Enter your Name' />
                 </div>
                 <div >
-                    {/* <label >Password</label> */}
-                    <input type='password' placeholder='Enter Your password'/>
+                    <input
+                        type='password'
+                        value={password}
+                        onChange={(e)=>{setPassword(e.target.value)}}
+                        placeholder='Enter Your password' />
                 </div>
                 <div>
-                    <a href="" className='button'>Submit</a>&nbsp;<a  href="/authentication/register">Register</a>
+                    <button className='button'>Submit</button>&nbsp;<Link to="/authentication/register">Register</Link>
                 </div>
             </form>
         </div>
