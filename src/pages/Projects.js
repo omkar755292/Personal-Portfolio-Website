@@ -1,8 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import api from '../api/api';
 import ProjectCard from '../component/ProjectCard'
 
 const Projects = (props) => {
-  const renderProject = props.projects.map((project) => {
+  const [projects, setProject] = useState([]);
+  const retriveProjects = async () => {
+    const response = await api.get('/api/project');
+    return response.data;
+  }
+
+  useEffect(() => {
+    //Get all Project
+    const getAllProjects = async() =>{
+      const allProject = await retriveProjects();
+      setProject(allProject);
+    }
+    getAllProjects();
+
+  }, [])
+  
+  //Render Project function
+  const renderProject = projects.map((project) => {
     return <ProjectCard key={project.id} project={project} />
   });
   return (

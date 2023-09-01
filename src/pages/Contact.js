@@ -1,18 +1,24 @@
 import React, { useState } from 'react'
 import Avatar from '../component/Avatar'
+import api from '../api/api';
 
-const Contact = (props) => {
+const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const add = (e) => {
     e.preventDefault();
     const newMessage = {name, email, message}
-    console.log(newMessage);
+    postMessage(newMessage)
     setName('');
     setEmail('');
     setMessage('');
   }
+  const postMessage = async (newMessage) =>{
+    const response = await api.post('/api/contact', newMessage);
+    console.log(response);
+  }
+  
   return (
     <div>
       <section className="contact-section">
