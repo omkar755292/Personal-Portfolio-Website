@@ -23,14 +23,14 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'    
-    - run: |
-          npm install
-          npm run build
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if
+    - run: | 
           cd build
           touch .env
-          echo "${{ secrets.PROD_ENV_FILE }}" > .env
           touch server.js
+          echo "${{ secrets.PROD_ENV_FILE }}" > .env
           echo "${{ secrets.PROD_SERVER_FILE }}" > server.js
     - run: pm2 reload onkar.dev-react
      
