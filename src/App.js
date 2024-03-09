@@ -1,7 +1,7 @@
 import './App.css';
 import Index from './pages/Index';
 import { BrowserRouter as Router , Route, Routes } from 'react-router-dom'
-import SignIn from './pages/SignIn';
+import SingIn from './pages/SignIn'
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/*' element={< Index />} />
-          <Route exact path='/authentication/*' element={< SignIn />} />
+          <Route exact path='/authentication/*' element={< SingIn />} />
         </Routes>
       </Router>
       
