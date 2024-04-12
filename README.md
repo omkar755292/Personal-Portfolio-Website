@@ -1,6 +1,6 @@
 # Personal Portfolio App
 
-This is a React-based web application for showcasing your portfolio, including details about yourself, your projects, blogs, and contact information.
+This is a React-based web application for showcasing my portfolio, including details about myself, projects, blogs, and many more information.
 
 
 ## Technologies Used
