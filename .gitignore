@@ -1,7 +1,8 @@
 /node_modules
 /build
-/onkar.dev.react
+/personal-portfolio-app
 deploy.sh
 setup.sh
 .env
 README.pdf
+src/firebase.js
