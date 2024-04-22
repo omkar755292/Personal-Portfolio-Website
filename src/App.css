@@ -7,6 +7,30 @@
   list-style: none;
 }
 
+.download-icon {
+  height: 50px;
+  width: 50px;
+}
+
+#download-resume {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  display: inline;
+  /* background-color: aqua; */
+}
+
+#download-resume button {
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+#download-resume button:hover {
+  font-weight: 900;
+  color: rgb(120, 15, 255);
+}
+
 h1 {
   font-size: 29px;
   font-weight: 800;
@@ -53,6 +77,9 @@ p {
 }
 
 /* CSS for home section  */
+.home-section {
+  height: 79vh;
+}
 
 .home-container {
   padding-top: 2vw;

@@ -12,7 +12,6 @@ const Footer = () => {
         <Link to="https://github.com/omkar755292">GitHub</Link>
         <Link to="https://www.instagram.com/onkaar._/">Facebook</Link>
         <Link to="https://www.instagram.com/onkaar._/">Instagram</Link>
-        <DownloadCV />
       </div>
     </footer>
   )

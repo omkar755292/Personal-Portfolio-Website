@@ -10,19 +10,19 @@ import { Route, Routes } from 'react-router-dom'
 const Main = () => {
 
   return (
-    <>
+    <div>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/about' element={<Events />} />
         <Route exact path='/blog' element={<Blogs />} />
-        <Route exact path='/project' element={<Projects/>} />
+        <Route exact path='/project' element={<Projects />} />
         <Route exact path='/contact' element={<Contact />} />
         <Route exact path='*' element={<Error />} />
       </Routes>
       <Routes>
       </Routes>
 
-    </>
+    </div>
   )
 }
 
