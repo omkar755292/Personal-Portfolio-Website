@@ -94,8 +94,8 @@ p {
 
 .about-container {
   background-color: rgb(120, 15, 255);
-  padding: 4vw;
   color: white;
+  padding: 5vw;
 }
 
 /* Css for Project section  */
@@ -182,12 +182,9 @@ p {
 /* CSS for internship section  */
 
 .internship-section {
-
-  padding: 3vw 12vw;
-}
-
-.internship-info {
-  padding-bottom: 2vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
 }
 
 .internship-container {

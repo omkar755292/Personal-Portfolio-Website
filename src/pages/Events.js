@@ -8,10 +8,8 @@ const Events = () => {
         <h1>Who I'm? Get to Know me!</h1>
         <p>
           I'm a Computer Engineering Graduate from Singad Institute, Pune working as a
-          Freelancer
-          Programmer proficiently in Web Development and Cloud Computing. I like to sharing content
-          related
-          Technology that I have learned over the years in IT Industy so it can help other people in
+          Freelancer Programmer proficiently in Web Development and Cloud Hosting/deployment. I like to sharing content
+          related Technology that I have learned over the years in IT Industy so it can help other people in
           the
           Developer
           Community. Check out some of my Blogs in the Blog section and Feel free to Connect or Follow

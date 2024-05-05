@@ -12,8 +12,7 @@ const Home = () => {
             <h1>Hello there! I'm Omkar</h1>
             <p>
               A Full Stack Developer and Bloger focused on Developing Software Application and building the
-              modules that leads
-              to the success of the overall product. <br /> I design and code beautifully simple things, and I
+              modules that leads to the success of the overall product. <br /> I design and code beautifully simple things, and I
               love what I do.
             </p>
             <div><img src={laptopimg} alt="laptopimg" /></div>
