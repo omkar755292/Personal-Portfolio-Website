@@ -1,3 +1,4 @@
+import '../asset/css/projectpage.css'
 import React, { useEffect, useState } from 'react'
 import api from '../api/api';
 import ProjectCard from '../component/ProjectCard'
@@ -11,14 +12,14 @@ const Projects = (props) => {
 
   useEffect(() => {
     //Get all Project
-    const getAllProjects = async() =>{
+    const getAllProjects = async () => {
       const allProject = await retriveProjects();
       setProject(allProject);
     }
     getAllProjects();
 
   }, [])
-  
+
   //Render Project function
   const renderProject = projects.map((project) => {
     return <ProjectCard key={project.id} project={project} />

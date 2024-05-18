@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import api from '../api/api';
 import BlogCard from '../component/BlogCard'
+import '../asset/css/blogpage.css'
 
 const Blogs = (props) => {
 
@@ -28,9 +29,9 @@ const Blogs = (props) => {
   });
   return (
     <div className='blog-container'>
-      <div>
+    
         {renderblogs}
-      </div>
+  
     </div>
   )
 }
