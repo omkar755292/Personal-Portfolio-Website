@@ -1,15 +1,13 @@
 import React from 'react'
-import projectImg from '../asset/images/img-projects/web-design.jpg'
+import { Link } from 'react-router-dom'
 
 const ProjectCard = (props) => {
-  const handleButtonClick = () => {
-    window.location.href = `https://${props.project.host}/`; // Change this to your desired link
-  };
+
   return (
     <div className='project-card'>
-      <div><img src={projectImg} alt="projectImg" /></div>
+      <div><img src={props.project.projectImagePath} alt="projectImg" /></div>
       <p>{props.project.title}</p>
-      <div><button onClick={handleButtonClick}> view </button></div>
+      <div><button><Link to={`${props.project.projectUrl}`} target="_blank">View</Link></button></div>
     </div>
   )
 }
