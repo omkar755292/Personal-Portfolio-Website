@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Avatar from '../component/Avatar'
+import '../asset/css/contactpage.css'
 import api from '../api/api';
 
 const Contact = () => {

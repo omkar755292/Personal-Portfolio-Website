@@ -5,9 +5,13 @@ const ProjectCard = (props) => {
 
   return (
     <div className='project-card'>
-      <div><img src={props.project.projectImagePath} alt="projectImg" /></div>
-      <p>{props.project.title}</p>
-      <div><button><Link to={`${props.project.projectUrl}`} target="_blank">View</Link></button></div>
+      <div className='image-container'>
+        <img src={props.project.projectImagePath} alt="projectImg" />
+        <div className='overlay'>
+          <p>{props.project.title}</p>
+        </div>
+      </div>
+      <div> <Link to={`${props.project.projectUrl}`} target="_blank"> <button className='project-view-button'>View</button></Link> </div>
     </div>
   )
 }

@@ -6,7 +6,7 @@ const BlogCard = (props) => {
             <div>
                 <article className='blog-article' key={props.blog.id}>
                     <h2>{props.blog.title}</h2>
-                    <p className='blog-content ' style={{ height: "200px" }}>{props.blog.content}</p>
+                    <p className='blog-content ' style={{ height: "150px" }}>{props.blog.content}</p>
                 </article>
             </div>
             <button className='blog-button'>view</button>
