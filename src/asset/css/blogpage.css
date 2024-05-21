@@ -26,6 +26,19 @@
     font-size: 16px;
 }
 
+.back-top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 23px;
+}
+.back-top img{
+    color: rgba(119, 15, 255, 0.7);
+   width: 50px;
+   cursor: pointer;
+}
+
 .post-date {
     display: inline;
     position: absolute;

@@ -28,7 +28,7 @@ const Projects = (props) => {
     <div className='project-section'>
       <div className='project-info'>
         <h2>My Recent Work</h2>
-        <p>Here are a few past projects I've worked on. Want to see more? </p>
+        <p>Here are a few past projects I've worked on. Want to see more? <a href='https://dribbble.com/omkar13021' target='blank'>click here</a> </p>
       </div>
       <div className='project-container'>
         {renderProject}
