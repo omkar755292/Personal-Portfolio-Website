@@ -33,6 +33,7 @@ const Blogs = (props) => {
   const renderblogs = blogs.map((blog) => {
     return <BlogCard key={blog.id} blog={blog} />
   });
+  
   return (
     <div className='blog-container'>
       {renderblogs}
